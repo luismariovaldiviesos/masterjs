@@ -12,7 +12,7 @@ if (true) {
 console.log(numero); // valor 50
 
 
-// prueba con let 
+// prueba con let sigue mantienedo el valor de la variable que se asigno fuera del bucle
 
 var texto = "curso js";
 console.log(texto); // valor ''
