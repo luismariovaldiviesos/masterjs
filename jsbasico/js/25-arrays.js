@@ -26,13 +26,26 @@ var nombres = ["juan", "pedro","manolo",1]; // una coleccion
 // todos los elementos del arrya por pantalla
 
 document.write("<h1>lenguajes de programacion</h1>")
-document.write("<ul>")
-for(var i= 0; i<= nombres.length; i++){
-    document.write("<li>"+lenguajes[i]+"</li>");
-}
-document.write("</ul>")
+// document.write("<ul>")
+// for(var i= 0; i<= nombres.length; i++){
+//     document.write("<li>"+lenguajes[i]+"</li>");
+// }
+// document.write("</ul>")
 
-document.write("<h1>recorrido por un for each</h1>")
-lenguajes.forEach((elemento, indice)=> {
-    document.write("<li>poiscion "+indice+" - "+elemento+"</li>");
-});
+// document.write("<h1>recorrido por un for each</h1>")
+// lenguajes.forEach((elemento, indice)=> {
+//     document.write("<li>poiscion "+indice+" - "+elemento+"</li>");
+// });
+
+for(let lenguaje in lenguajes){
+    document.write("<li>"+lenguajes[lenguaje]+"</li>");
+}
+
+// busquedas
+// var busqueda = lenguajes.find(function(parametro){
+//     return parametro = "php7";
+// });
+var precios = [10,20,30,40];
+var busqueda = precios.some(precio => precio >= 30);
+console.log(busqueda);
+
