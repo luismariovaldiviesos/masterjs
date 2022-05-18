@@ -38,3 +38,25 @@ numeros.sort(function (a,b){
     return a-b
 });
 mostrarArray(numeros, 'ordenado');
+// invertir y mostrar
+numeros.reverse();
+mostrarArray(numeros, 'revertido');
+
+//contar elementos 
+document.write("<h1>el array tiene " +numeros.length+"elementos") ;
+
+
+//busqueda de elemento en el array
+var busqueda = parseInt(prompt("ingresa el numero que quieres buscar "));
+
+var  posicion = numeros.findIndex(numero => numero == busqueda);
+if(posicion && posicion !=  -1)
+{
+    document.write("<h1>encontrado</h1>");
+    document.write("<h1>posiciin de la busqueda: " +posicion+"</h1>");
+}
+else{
+    document.write("<h1>no hay </h1>");
+}
+
+
